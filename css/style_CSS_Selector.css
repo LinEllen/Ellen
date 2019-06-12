@@ -137,6 +137,16 @@ img {
     padding-bottom: 0.5em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+    background-color: #947ca8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#n4 {
+    padding-top: 3em;
+    padding-bottom: 0.5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     background-color: #9c0101;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -162,6 +172,10 @@ img {
 }
 
 #third {
+    background-color: #afa7b6;
+}
+
+#four {
     background-color: #571111;
 }
 
@@ -305,7 +319,7 @@ h2::after {
     #nav0 {
         position: fixed;
         margin-top: 3em;
-        margin-right: 3em;
+        margin-right: 0em;
         top: 0em;
         left: 0em;
     }
@@ -314,5 +328,11 @@ h2::after {
     }
     h4 {
         font-size: 250%;
+    }
+    #nav0 {
+        position: fixed;
+        margin-top: 3em;
+        top: 0em;
+        right: 0em;
     }
 }
