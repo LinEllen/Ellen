@@ -11,18 +11,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>書屋天地-自我介紹</title>
+    <title>書屋天地-寫信給我</title>
     <link rel="stylesheet" href="css/style_CSS_Selector.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 
-<body id="first">
+<body id="four">
     <header class="full" style="background-image: url('image/123.jpg'); position: relative;">
         <h1><br>書 屋 天 地 </h1>
     </header>
     <div id="nav0">
         <div class="col-sm-2" id="n1" style="background-image: url('image/按鈕1.gif'); position: relative;">
-            <a href="#sec1">自我介紹</a>
+            <a href="index.html">自我介紹</a>
         </div>
         <div class="col-sm-2" id="n2" style="background-image: url('image/按鈕2.gif'); position: relative;">
             <a href="B10756035_2.html">小說作家</a>
@@ -31,16 +31,30 @@
             <a href="B10756035_3.html">推薦書單</a>
         </div>
         <div class="col-sm-2" id="n4" style="background-image: url('image/按鈕4.gif'); position: relative;">
-            <a href="B10756035_4.html">寫信給我</a>
+            <a href="#sec1">寫信給我</a>
         </div>
     </div>
     <article>
         <section id="sec1">
-            <h2>自我介紹</h2>
-            <p>姓名：林郁倫</p>
-            <p>學校：國立屏東科技大學</p>
-            <p>系級：資管一A</p>
-            <p>興趣：看小說、聽音樂</p>
+            <h2>寫信給我</h2>
+            <form action="ellen95204@gmail.com" method="POST">
+                <label for="NUname">名字</label>
+                <input type="text" name="NUname" maxlength="15"><br><br>
+
+                <label for="Uemail">email</label>
+                <input type="email" name="Uemail"><br><br>
+                <label for="Ubook">你也有看過這幾本書嗎</label><br>
+                <p>
+                    <input type="checkbox" name="skill[]">1/2王子</input><br>
+                    <input type="checkbox" name="skill[]">終疆</input><br>
+                    <input type="checkbox" name="skill[]">零度領域</input><br>
+                    <input type="checkbox" name="skill[]">末世風華</input><br><br>
+
+                    <label for="Udescrip">建議</label>
+                    <textarea name="descrip" id="Udescrip" cols="30" rows="10" wrap="physical"></textarea><br><br>
+                    <input type="submit">
+                    <input type="reset">
+            </form>
         </section>
 
         <footer>
