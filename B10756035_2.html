@@ -4,43 +4,88 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="./練習 - CSS_Position 定位練習_files/ufo.js.下載"></script>
+    <script type="text/javascript" src="manu.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="./練習 - CSS_Position 定位練習_files/styles.php">
     <link rel="stylesheet" type="text/css" href="./練習 - CSS_Position 定位練習_files/styles(1).php">
 
 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>書屋天地-小說分類</title>
+    <title>書屋天地-小說作家</title>
     <link rel="stylesheet" href="css/style_CSS_Selector.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+
 </head>
 
 <body id="second">
+    <br><br><br><br>
     <header class="full" style="background-image: url('image/123.jpg'); position: relative;">
         <h1><br>書 屋 天 地 </h1>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </header>
     <div id="nav0">
         <div class="col-sm-2" id="n1" style="background-image: url('image/按鈕1.gif'); position: relative;">
-            <div class="na0" id="na1"><a href="index.html">自我介紹</a></div>
+            <a href="index.html">自我介紹</a>
         </div>
         <div class="col-sm-2" id="n2" style="background-image: url('image/按鈕2.gif'); position: relative;">
-            <div class="na0" id="na2"><a href="#sec1">小說作家</a></div>
+            <a href="#sec1">小說作家</a>
         </div>
         <div class="col-sm-2" id="n3" style="background-image: url('image/按鈕3.gif'); position: relative;">
-            <div class="na0" id="na3"><a href="B10756035_3.html">推薦書單</a></div>
+            <a href="B10756035_3.html">推薦書單</a>
         </div>
         <div class="col-sm-2" id="n4" style="background-image: url('image/按鈕4.gif'); position: relative;">
             <a href="B10756035_4.html">寫信給我</a>
         </div>
     </div>
+
+
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark lg-light" style="background-color: #7f95ac;">
+
+            <!-- .navbar-brand 左上LOGO位置 -->
+            <!-- .navbar-toggler 漢堡式選單按鈕 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+            <!-- 選單項目&漢堡式折疊選單 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- active表示當前頁面 -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">自我介紹<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#sec1">小說作家</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="B10756035_3.html">推薦書單</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="B10756035_4.html">寫信給我</a>
+                    </li>
+            </div>
+
+        </nav>
+    </div>
+
+
     <article>
         <section id="sec1">
             <h2>小說作者</h2>
             <h3>由古至今，小說作家真的非常多，在此，我只提出幾個有拜讀過作品，且其中最喜歡的幾位作者，基本上會以台版輕小說小說及外國翻譯小說為主。</h3>
         </section>
         <section class="bookmark" style="background-image: url('image/345.jpg');">
-            <h4>台版小說</h4>
+            <h4><br>台版小說</h4><br><br>
             <h3 style="color:white">這是以台灣作家所創作並發行的小說類別</h3>
         </section>
         <section>
@@ -74,7 +119,7 @@
             </table>
         </section>
         <section class="bookmark" style="background-image: url('image/345.jpg');">
-            <h4>外國翻譯小說</h4>
+            <h4><br>外國翻譯小說</h4><br><br>
             <h3 style="color:white">這是由外國翻譯小說的類別，大部分指歐洲或美國等西方國家出版的小說翻譯成中文</h3>
         </section>
         <section>
@@ -100,7 +145,6 @@
         <footer>
             <p>圖片來源:網際網路</p>
         </footer>
-
 
     </article>
 </body>
