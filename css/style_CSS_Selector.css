@@ -6,7 +6,6 @@
 }
 
 header,
-nav,
 section {
     width: 70%;
     margin-left: auto;
@@ -89,17 +88,6 @@ img {
     max-width: 100%;
 }
 
-
-/*.na0 {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: fixed;
-}*/
-
 #nav0 {
     position: fixed;
     margin: 3em;
@@ -179,20 +167,6 @@ img {
     background-color: #571111;
 }
 
-
-/*nav {
-    width: 40%;
-    display: inline;
-}*/
-
-
-/*div,
-.li3 {
-    margin: 2.5em;
-    padding: 5px;
-    display: inline;
-}*/
-
 div {
     display: inline;
 }
@@ -201,8 +175,18 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    margin: 2px;
+    padding: 10px;
+    color: red;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
 h3 {
     text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
 }
 
 h4 {
@@ -322,6 +306,8 @@ h2::after {
         margin-right: 0em;
         top: 0em;
         left: 0em;
+        right: 0em;
+        display: none;
     }
     h1 {
         font-size: 400%;
@@ -334,5 +320,55 @@ h2::after {
         margin-top: 3em;
         top: 0em;
         right: 0em;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        /*隱藏選單開始*/
+        max-height: 0px;
+        overflow: hidden;
+        /*隱藏選單結束*/
+        transition: max-height 2.3s;
+        margin-top: 1px;
+        /*絕對定位疊在網頁上*/
+        position: absolute;
+        z-index: 100;
+        /*header 80px+1px boder 線條*/
+        top: 81px;
+        left: 0;
+        right: 0;
+        background: #0F222B;
+    }
+    .menu li {
+        float: none;
+        border-bottom: 1px dashed #69CA62;
+    }
+    .menu li a {
+        transition: all 0.3s;
+    }
+    .menu li a:hover {
+        background: #69CA62;
+        color: #fff;
+    }
+    .showmenu {
+        display: block;
+        float: right;
+        margin: 1em;
+    }
+    /*jQ點擊後動態在 body 加上 class */
+    .menu-show .menu {
+        max-height: 500px
+    }
+}
+
+@media screen and (min-width:481px) {
+    /* nav {
+        max-height: 0px;
+        overflow: hidden;
+        ;
+    }*/
+    .fixed-top {
+        display: none;
     }
 }
